@@ -88,8 +88,8 @@ class JunctionManager(object):
                 elif data[i * w + j] == -1:
                     img[i, j] = 205
 
-        # crop borders
-        img = img[20:380, 20:380]
+        # crop borders if performing map stitching
+        # img = img[20:380, 20:380]
         return img
 
     @staticmethod
